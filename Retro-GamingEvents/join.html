@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Gaming Club</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="nav-bar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="events.html">Game Events</a></li>
+            <li><a href="join.html">Join the Club</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="header">
+        <h1>Upcoming Games Events</h1>
+        <p>Don't miss any tournament of your favorite games.</p>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <div class="main-container">
+
+            <form action="https://webdevcit.com/displayvalues.php" method="post" enctype="multipart/form-data"
+                class="join-form">
+
+
+
+
+                <section class="main-event">
+
+                    <label for="name">Enter your Name (Required):</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+
+                    <label for="email">Email Address (Required):</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+
+                    <label for="date-started">Date Started in MTU (Required):</label>
+                    <input type="date" id="date-started" name="date-started" required>
+
+                </section>
+
+                <section class="main-event">
+                    <label for="campus">MTU Campus:</label>
+                    <select id="campus" name="campus">
+                        <option value="Cork">Cork</option>
+                        <option value="Kerry">Kerry</option>
+                        <option value="Clonakilty">Clonakilty</option>
+                        <option value="Munster Technologic University">Munster Technologic University</option>
+                    </select>
+                </section>
+
+                <section class="main-event">
+                    <label for="department">Department of Study:</label>
+                    <input type="text" id="department" name="department" placeholder="Enter your department">
+
+
+                    <label for="favourite-game">Favourite Retro Game:</label>
+                    <input type="text" id="favourite-game" name="favourite-game"
+                        placeholder="Enter your favourite retro game">
+                </section>
+
+                <section class="main-event">
+                    <div>
+                        <h4>Are you interested in any of these genres?</h4>
+                        <label><input type="checkbox" name="genre[]" value="Arcade"> Arcade</label>
+                        <label><input type="checkbox" name="genre[]" value="Platformers"> Platformers</label>
+                        <label><input type="checkbox" name="genre[]" value="Shooters"> Shooters</label>
+                        <label><input type="checkbox" name="genre[]" value="Puzzle"> Puzzle</label>
+                        <label><input type="checkbox" name="genre[]" value="RPG"> RPG</label>
+                    </div>
+                </section>
+
+                <section class="main-event">
+
+                    <div>
+                        <h4>Have you previously attended a club event?</h4>
+                        <label><input type="radio" name="attended" value="yes" required> Yes</label>
+                        <label><input type="radio" name="attended" value="no" required> No</label>
+                    </div>
+                </section>
+
+                <section class="main-event">
+                    <label for="events">What events are of interest to you?</label>
+                    <input type="text" id="events" name="events" placeholder="Enter events of interest">
+
+
+                    <label for="why-join">Why do you want to join the club?</label>
+                    <textarea id="why-join" name="why-join" rows="5"
+                        placeholder="Tell us why you'd like to join"></textarea>
+                </section>
+
+                <section class="main-event">
+
+                    <h4>Preferred Membership Card:</h4>
+                    <label><input type="radio" name="card-preference" value="virtual" checked> Virtual (default)</label>
+                    <label><input type="radio" name="card-preference" value="printed"> Printed</label>
+
+
+                </section>
+
+                <section class="main-event">
+                    <label for="photo-upload">Upload a photo for your membership card:</label>
+                    <input type="file" id="photo-upload" name="photo" accept="image/*">
+
+
+                    <div class="contact-form button">
+                        <button type="submit">Submit</button>
+                        <button type="reset">Cancel</button>
+                    </div>
+
+                </section>
+        </div>
+        </form>
+
+    </main>
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2024 Retro Gaming Club. Bringing the classics back to life!</p>
+    </footer>
+</body>
+
+</html>
